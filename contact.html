@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Shoes.VN</title>
+    <title data-i18n="contact_title">Contact Us | Shoes.VN</title>
     
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -37,11 +37,17 @@
 
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html#services">Services</a></li>
-                    <li><a href="index.html#promotions">Promotions</a></li>
-                    <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="index.html#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="index.html#promotions" data-i18n="nav_promotions">Promotions</a></li>
+                    <li class="active"><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
+                <div class="navbar-right">
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="changeLanguage('vi')">VN</button>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,17 +55,17 @@
     <div class="container contact-container">
         <div class="row">
             <div class="col-md-12 text-center contact-header">
-                <h2>Let's Connect</h2>
-                <p>Have questions or want to book a restoration? Reach out to our team of experts.</p>
+                <h2 data-i18n="connect_h2">Let's Connect</h2>
+                <p data-i18n="connect_p">Have questions or want to book a restoration? Reach out to our team of experts.</p>
             </div>
         </div>
         
         <div class="row">
             <div class="col-md-5 contact-info">
-                <h3>Store Information</h3>
+                <h3 data-i18n="store_info">Store Information</h3>
                 <div class="info-item">
                     <span><i class="fas fa-map-marker-alt"></i></span>
-                    <p>74 Nai Nam Street, Da Nang</p>
+                    <p data-i18n="footer_address">74 Nai Nam Street, Da Nang</p>
                 </div>
                 <div class="info-item">
                     <span><i class="fas fa-phone-alt"></i></span>
@@ -71,7 +77,7 @@
                 </div>
                 <div class="info-item">
                     <span><i class="fas fa-clock"></i></span>
-                    <p>Mon - Sun: 8:00 AM - 9:00 PM</p>
+                    <p data-i18n="opening_hours">Mon - Sun: 8:00 AM - 9:00 PM</p>
                 </div>
 
                 <div class="map-placeholder">
@@ -85,39 +91,39 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="fullname">Full Name</label>
+                                    <label for="fullname" data-i18n="label_name">Full Name</label>
                                     <input type="text" class="form-control custom-input" id="fullname"
-                                        placeholder="John Doe">
+                                        placeholder="John Doe" data-i18n="placeholder_name">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="phone">Phone Number</label>
+                                    <label for="phone" data-i18n="label_phone">Phone Number</label>
                                     <input type="text" class="form-control custom-input" id="phone"
-                                        placeholder="+84 ...">
+                                        placeholder="+84 ..." data-i18n="placeholder_phone">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Email Address</label>
+                            <label for="email" data-i18n="label_email">Email Address</label>
                             <input type="email" class="form-control custom-input" id="email"
-                                placeholder="name@example.com">
+                                placeholder="name@example.com" data-i18n="placeholder_email">
                         </div>
                         <div class="form-group">
-                            <label for="service">Interested Service</label>
+                            <label for="service" data-i18n="label_service">Interested Service</label>
                             <select class="form-control custom-input" id="service">
-                                <option>Deep Wash</option>
-                                <option>Pro Repaint</option>
-                                <option>Sole Shield</option>
-                                <option>Glue & Fix</option>
+                                <option data-i18n="service_1_title">Deep Wash</option>
+                                <option data-i18n="service_2_title">Pro Repaint</option>
+                                <option data-i18n="service_3_title">Sole Shield</option>
+                                <option data-i18n="service_4_title">Glue & Fix</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Your Message</label>
+                            <label for="message" data-i18n="label_message">Your Message</label>
                             <textarea class="form-control custom-input" id="message" rows="5"
-                                placeholder="Tell us about your shoes..."></textarea>
+                                placeholder="Tell us about your shoes..." data-i18n="placeholder_message"></textarea>
                         </div>
-                        <button type="button" class="btn btn-send" id="send">
+                        <button type="button" class="btn btn-send" id="send" data-i18n="btn_send">
                             Send Request <i class="fas fa-paper-plane" style="margin-left: 10px;"></i>
                         </button>
                     </form>
@@ -130,18 +136,19 @@
     <footer class="footer">
         <div class="container footer-content">
             <p><i class="fas fa-envelope"></i> ShooesVN@gmail.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> 74 Nai Nam Street, Da Nang</p>
+            <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">74 Nai Nam Street, Da Nang</span></p>
             <div style="margin-top: 20px;">
                 <a href="#" style="color: white; margin: 0 15px; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
                 <a href="#" style="color: white; margin: 0 15px; font-size: 1.5rem;"><i class="fab fa-instagram"></i></a>
                 <a href="#" style="color: white; margin: 0 15px; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
             </div>
-            <h5>&copy; 2026 SHOES.VN - Premium Shoe Laundry Service</h5>
+            <h5 data-i18n="footer_copy">&copy; 2026 SHOES.VN - Premium Shoe Laundry Service</h5>
         </div>
     </footer>
 
     <script src="js/Jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="mycode.js"></script>
 </body>
 

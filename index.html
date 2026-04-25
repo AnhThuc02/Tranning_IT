@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Premium Shoe Laundry Shop | Shoes.VN</title>
+    <title data-i18n="title">Premium Shoe Laundry Shop | Shoes.VN</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -36,19 +36,25 @@
 
             <div class="collapse navbar-collapse" id="main-nav">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#promotions">Promotions</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li class="active"><a href="index.html" data-i18n="nav_home">Home</a></li>
+                    <li><a href="#services" data-i18n="nav_services">Services</a></li>
+                    <li><a href="#promotions" data-i18n="nav_promotions">Promotions</a></li>
+                    <li><a href="#faq" data-i18n="nav_faq">FAQ</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
 
-                <form class="navbar-form navbar-right" role="search">
-                    <div class="form-group search-wrapper">
-                        <input type="text" class="form-control" placeholder="Search services...">
-                        <i class="fas fa-search search-icon"></i>
+                <div class="navbar-right">
+                    <form class="navbar-form" role="search" style="margin: 0; padding: 0;">
+                        <div class="form-group search-wrapper">
+                            <input type="text" class="form-control" placeholder="Search services..." data-i18n="search_placeholder">
+                            <i class="fas fa-search search-icon"></i>
+                        </div>
+                    </form>
+                    <div class="lang-switcher">
+                        <button class="lang-btn active" onclick="changeLanguage('en')">EN</button>
+                        <button class="lang-btn" onclick="changeLanguage('vi')">VN</button>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </nav>
@@ -56,10 +62,10 @@
     <!-- Hero Section -->
     <header class="hero-section">
         <div class="hero-content">
-            <h1>Revive Your Step</h1>
-            <p>Premium Shoe Laundry & Restoration services for those who value every detail. We don't just clean; we
+            <h1 data-i18n="hero_title">Revive Your Step</h1>
+            <p data-i18n="hero_subtitle">Premium Shoe Laundry & Restoration services for those who value every detail. We don't just clean; we
                 restore.</p>
-            <a href="contact.html" class="btn-primary-modern">Book Your Wash Now</a>
+            <a href="contact.html" class="btn-primary-modern" data-i18n="hero_btn">Book Your Wash Now</a>
         </div>
     </header>
 
@@ -67,7 +73,7 @@
 
         <!-- Services Section -->
         <section id="services" class="section-padding">
-            <h2>Our Professional Services</h2>
+            <h2 data-i18n="services_title">Our Professional Services</h2>
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <div class="service-card">
@@ -75,8 +81,8 @@
                             <img src="images/service01.jpg" alt="Shoe Washing">
                         </div>
                         <div class="card-body">
-                            <h3>Deep Wash</h3>
-                            <p>Perfect cleaning for every material using premium eco-friendly solutions.</p>
+                            <h3 data-i18n="service_1_title">Deep Wash</h3>
+                            <p data-i18n="service_1_desc">Perfect cleaning for every material using premium eco-friendly solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -87,8 +93,8 @@
                             <img src="images/service02.jpg" alt="Repaint">
                         </div>
                         <div class="card-body">
-                            <h3>Pro Repaint</h3>
-                            <p>Restore original colors or customize your favorite pairs with expert precision.</p>
+                            <h3 data-i18n="service_2_title">Pro Repaint</h3>
+                            <p data-i18n="service_2_desc">Restore original colors or customize your favorite pairs with expert precision.</p>
                         </div>
                     </div>
                 </div>
@@ -99,8 +105,8 @@
                             <img src="images/service03.jpg" alt="Sole Protection">
                         </div>
                         <div class="card-body">
-                            <h3>Sole Shield</h3>
-                            <p>High-quality sole protection stickers to keep your shoes brand new.</p>
+                            <h3 data-i18n="service_3_title">Sole Shield</h3>
+                            <p data-i18n="service_3_desc">High-quality sole protection stickers to keep your shoes brand new.</p>
                         </div>
                     </div>
                 </div>
@@ -111,8 +117,8 @@
                             <img src="images/service04.jpg" alt="Glue Repair">
                         </div>
                         <div class="card-body">
-                            <h3>Glue & Fix</h3>
-                            <p>Reliable adhesive repair for detached soles and structural damage.</p>
+                            <h3 data-i18n="service_4_title">Glue & Fix</h3>
+                            <p data-i18n="service_4_desc">Reliable adhesive repair for detached soles and structural damage.</p>
                         </div>
                     </div>
                 </div>
@@ -123,8 +129,8 @@
         <section id="promotions" class="section-padding">
             <div class="row center">
                 <div class="col-md-12">
-                    <h2>Exclusive Promotion Combos</h2>
-                    <p style="margin-bottom: 50px; font-size: 1.2rem; color: var(--text-muted);">Unbeatable value for
+                    <h2 data-i18n="promotions_title">Exclusive Promotion Combos</h2>
+                    <p style="margin-bottom: 50px; font-size: 1.2rem; color: var(--text-muted);" data-i18n="promotions_subtitle">Unbeatable value for
                         premium care.</p>
                 </div>
             </div>
@@ -133,8 +139,8 @@
                 <div class="col-md-4">
                     <div class="combo-card">
                         <img src="images/combo01.PNG" alt="Combo 1">
-                        <h4>Essential Pack</h4>
-                        <p>3 Pairs Laundry + 1 Free</p>
+                        <h4 data-i18n="combo_1_title">Essential Pack</h4>
+                        <p data-i18n="combo_1_desc">3 Pairs Laundry + 1 Free</p>
                         <div class="price-tag"><del>200k</del> 150k VNĐ</div>
                         <p><small>Available at Da Nang Branch</small></p>
                     </div>
@@ -143,8 +149,8 @@
                 <div class="col-md-4">
                     <div class="combo-card">
                         <img src="images/combo02.PNG" alt="Combo 2">
-                        <h4>Restoration Pack</h4>
-                        <p>3 Pairs Repaint + 1 Free</p>
+                        <h4 data-i18n="combo_2_title">Restoration Pack</h4>
+                        <p data-i18n="combo_2_desc">3 Pairs Repaint + 1 Free</p>
                         <div class="price-tag"><del>500k</del> 450k VNĐ</div>
                         <p><small>Limited Time Offer</small></p>
                     </div>
@@ -153,8 +159,8 @@
                 <div class="col-md-4">
                     <div class="combo-card">
                         <img src="images/combo03.PNG" alt="Combo 3">
-                        <h4>Quick Refresh</h4>
-                        <p>Surface Clean & Polish</p>
+                        <h4 data-i18n="combo_3_title">Quick Refresh</h4>
+                        <p data-i18n="combo_3_desc">Surface Clean & Polish</p>
                         <div class="price-tag"><del>150k</del> 100k VNĐ</div>
                         <p><small>Free Pickup Available</small></p>
                     </div>
@@ -164,7 +170,7 @@
 
         <!-- Online Order Section -->
         <section class="section-padding">
-            <h2>Special Online Order</h2>
+            <h2 data-i18n="order_title">Special Online Order</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div style="border-radius: 20px; overflow: hidden; box-shadow: var(--shadow-soft);">
@@ -180,9 +186,9 @@
                                         <img src="images/sale20.png" alt="20% Off" class="img-responsive">
                                     </div>
                                     <div class="col-xs-8">
-                                        <h4>Online Exclusive</h4>
-                                        <p>Book through our website and get 20% OFF instantly.</p>
-                                        <div class="price-tag" style="font-size: 1.5rem;">Save 20%</div>
+                                        <h4 data-i18n="online_exclusive_title">Online Exclusive</h4>
+                                        <p data-i18n="online_exclusive_desc">Book through our website and get 20% OFF instantly.</p>
+                                        <div class="price-tag" style="font-size: 1.5rem;" data-i18n="save_20">Save 20%</div>
                                     </div>
                                 </div>
                             </div>
@@ -194,9 +200,9 @@
                                         <img src="images/camau.jpg" alt="Free Shipping" class="img-responsive">
                                     </div>
                                     <div class="col-xs-8">
-                                        <h4>Free Shipping</h4>
-                                        <p>Zero shipping costs for all orders under 3km.</p>
-                                        <div class="price-tag" style="font-size: 1.5rem;">FREE SHIP</div>
+                                        <h4 data-i18n="free_shipping_title">Free Shipping</h4>
+                                        <p data-i18n="free_shipping_desc">Zero shipping costs for all orders under 3km.</p>
+                                        <div class="price-tag" style="font-size: 1.5rem;" data-i18n="free_ship_tag">FREE SHIP</div>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +214,7 @@
 
         <!-- Testimonials -->
         <section id="testimonials" class="section-padding">
-            <h2>What Our Clients Say</h2>
+            <h2 data-i18n="testimonials_title">What Our Clients Say</h2>
             <div class="row">
                 <div class="col-md-4">
                     <div class="combo-card" style="padding: 30px;">
@@ -233,7 +239,7 @@
 
         <!-- FAQ Section -->
         <section id="faq" class="section-padding">
-            <h2>Frequently Asked Questions</h2>
+            <h2 data-i18n="faq_title">Frequently Asked Questions</h2>
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <div class="panel-group" id="accordion">
@@ -241,12 +247,12 @@
                             style="border-radius: 15px; border: none; box-shadow: var(--shadow-soft); margin-bottom: 15px;">
                             <div class="panel-heading" style="background: white; padding: 20px;">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">How long does a
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse1" data-i18n="faq_1_q">How long does a
                                         deep wash take?</a>
                                 </h4>
                             </div>
                             <div id="collapse1" class="panel-collapse collapse in">
-                                <div class="panel-body">Our standard deep wash service takes 2-3 business days to ensure
+                                <div class="panel-body" data-i18n="faq_1_a">Our standard deep wash service takes 2-3 business days to ensure
                                     thorough cleaning and proper drying.</div>
                             </div>
                         </div>
@@ -254,12 +260,12 @@
                             style="border-radius: 15px; border: none; box-shadow: var(--shadow-soft); margin-bottom: 15px;">
                             <div class="panel-heading" style="background: white; padding: 20px;">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Do you offer
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse2" data-i18n="faq_2_q">Do you offer
                                         pickup and delivery?</a>
                                 </h4>
                             </div>
                             <div id="collapse2" class="panel-collapse collapse">
-                                <div class="panel-body">Yes, we offer free pickup and delivery for orders within 3km. A
+                                <div class="panel-body" data-i18n="faq_2_a">Yes, we offer free pickup and delivery for orders within 3km. A
                                     small fee applies for greater distances.</div>
                             </div>
                         </div>
@@ -267,12 +273,12 @@
                             style="border-radius: 15px; border: none; box-shadow: var(--shadow-soft); margin-bottom: 15px;">
                             <div class="panel-heading" style="background: white; padding: 20px;">
                                 <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Can you clean
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse3" data-i18n="faq_3_q">Can you clean
                                         suede shoes?</a>
                                 </h4>
                             </div>
                             <div id="collapse3" class="panel-collapse collapse">
-                                <div class="panel-body">Absolutely! We use specialized cleaning methods and brushes for
+                                <div class="panel-body" data-i18n="faq_3_a">Absolutely! We use specialized cleaning methods and brushes for
                                     delicate materials like suede and nubuck.</div>
                             </div>
                         </div>
@@ -287,19 +293,20 @@
     <footer class="footer">
         <div class="container footer-content">
             <p><i class="fas fa-envelope"></i> ShooesVN@gmail.com</p>
-            <p><i class="fas fa-map-marker-alt"></i> 74 Nai Nam Street, Da Nang</p>
+            <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer_address">74 Nai Nam Street, Da Nang</span></p>
             <div style="margin-top: 20px;">
                 <a href="#" style="color: white; margin: 0 15px; font-size: 1.5rem;"><i class="fab fa-facebook"></i></a>
                 <a href="#" style="color: white; margin: 0 15px; font-size: 1.5rem;"><i
                         class="fab fa-instagram"></i></a>
                 <a href="#" style="color: white; margin: 0 15px; font-size: 1.5rem;"><i class="fab fa-tiktok"></i></a>
             </div>
-            <h5>&copy; 2026 SHOES.VN - Premium Shoe Laundry Service</h5>
+            <h5 data-i18n="footer_copy">&copy; 2026 SHOES.VN - Premium Shoe Laundry Service</h5>
         </div>
     </footer>
 
     <script src="js/Jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/i18n.js"></script>
     <script>
         // Smooth scrolling for anchor links
         $(document).ready(function () {
