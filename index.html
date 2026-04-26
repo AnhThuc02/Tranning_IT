@@ -328,7 +328,7 @@
     <script>
         // Smooth scrolling for anchor links
         $(document).ready(function () {
-            $("a").on('click', function (event) {
+            $('a[href*="#"]').not('[data-toggle="collapse"]').on('click', function (event) {
                 if (this.hash !== "") {
                     event.preventDefault();
                     var hash = this.hash;
